@@ -1,0 +1,9 @@
+.main{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    justify-content: start;
+    gap: 10px;
+}
+.main>button{
+    padding: 10px 20px;
+}
