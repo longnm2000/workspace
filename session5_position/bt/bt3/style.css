@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+    width: 300px;
+    height: 600px;
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.4) 20%,rgba(255,255,255,0) 50%),
+    url(../../assets/images/321519584_829978851396994_4452959822087024839_n.jpg);
+    background-size: cover;
+    position: relative;
+    margin:  20px auto 0;
+    border-radius: 10px;
+}
+.container div {
+    position: absolute;
+    bottom: 20px;
+    line-height: 30px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container div p:not(:last-child) {
+    color: #b5b5b5;
+}
+.container div p:last-child {
+    font-weight: 700;
+}
+i{
+    font-size: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 2px 4px;
+    margin-left: 5px;
+}

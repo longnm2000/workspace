@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 600px;
+}
+.img {
+    width: 100%;
+    height: 377px;
+    background: url(../../assets/images/Co-gai-xinh-dep-tua-thien-than-so-huu-body-vua-boc-lua-vua-ca-tinh-xia-yuan-1646212888-681-width1920height1080.jpg);
+    background-size: cover;
+    position: relative;
+}
+p {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+.icon {
+    color: white;
+    background-color: #ff8200;
+    padding: 5px;
+    border-radius: 50%;
+}
+span {
+    color: white;
+}
+h2{
+    padding: 20px;
+    text-align: justify;
+}
