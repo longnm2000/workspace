@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+/* body {
     background-color: black;
-}
+} */
 
 /* .card-img{
     background-image: url(./assets/images/anh-8-1621645023-458-width650height813.jpg);
@@ -35,7 +35,7 @@ p{
     width: 100%;
 } */
 
-.parent {
+/* .parent {
     width: 300px;
     height: 400px;
     background-color: pink;
@@ -63,4 +63,36 @@ p{
     position: absolute;
     top: 50px;
     left: 50px;
+} */
+
+.child1, .child2, .child3, .child4 {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.child1 {
+    background-color: red;
+}
+
+.child2 {
+    background-color: green;
+}
+
+.child3 {
+    background-color: blue;
+}
+
+.child4 {
+    background-color: yellow;
+}
+.flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    height: 600px;
+    background-color: black;
+    align-items: center;
 }
