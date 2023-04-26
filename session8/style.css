@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container div:nth-child(1) {
+    background-color: red;
+    transform: rotate(46deg);
+}
+.container div:nth-child(2) {
+    background-color: blue;
+}
+.container div:nth-child(3) {
+    background-color: yellow;
+}
+.container div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+}
