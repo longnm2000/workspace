@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    /* background-color: gray; */
+}
+header h1, header p {
+    text-align: center;
+    margin: 20px 0;
+}
+header {
+    padding: 50px 0;
+    background-color: #fff;
+}
+header span {
+    background-color: gray;
+    border: none;
+    border-left: 8px solid black;
+    border-right: 8px solid black;
+}
+
+.slider {
+    width: 100%;
+    background-image: url(./assets/images/jane.jpg);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.slider p, .slider h1 {
+    color: #fff;
+}
+.slider button {
+    background-color: gray;
+    padding: 10px 20px;
+    border: none;
+}
+
+.slider p {
+    font-weight: 700;
+}
+
+
+.box1 {
+    display: flex;
+}
+
+.box1-div1 {
+    flex: 2;
+}
+
+.box1-div2 {
+    flex: 1;
+    padding: 20px;
+}
+
+.box1-section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.box1-section .content-img {
+    width: 100%;
+}
+
+.box1-section p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.box1-section span {
+    font-weight: 700;
+}
+.box1-section h2, .box1-section .title {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.box1-section button {
+    padding: 10px;
+
+}
+
+.like-btn {
+    background-color: #fff;
+    border-radius: 1px solid gray;
+    height: 40px;
+}
+.replies-btn {
+    background-color: black;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    height: 40px;
+    float: right;
+}
+.replies-btn span {
+    font-weight: 100;
+    background-color: #fff;
+    color: black;
+    padding: 5px 10px;
+}
+
+
+
+.person {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+}
+.person img {
+    width: 100px;
+}
+
+.my-name {
+    background-color: #000;
+    color: #fff;
+}
+.my-name img{
+    width: 100%;
+}
+.my-name p,.my-name h3 {
+    padding: 10px;
+    text-align: justify;
+}
+.popular-post {
+    margin-top: 30px;
+    width: 100%;
+}
+.title-box {
+    color: #fff;
+    background-color: #000;
+    height: 50px;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.popular-post img {
+    width: 50px;
+    height: 50px;
+}
+
+.person-info {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+.person-info:not(:last-child) {
+    border-bottom: 1px solid gray;
+}
+
+.advertise div{
+    border: 10px solid #fff;
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+    background-color: gray;
+}
+.tags {
+    width: 100%;
+}
+
+.tags div p:first-child {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.tags div p {
+    padding: 5px;
+    background-color: grey;
+    font-size: 12px;
+}
+.tag-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+}
+
+
