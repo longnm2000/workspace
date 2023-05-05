@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: #fafafb;
+}
+
+p {
+  color: #96989b;
+}
+span {
+  color: black;
+}
+.container {
+  width: 100%;
+  max-width: 1500px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  background-color: white;
+  padding: 0 50px;
+}
+
+header > span {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+header > div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header div img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.header-bell {
+  position: relative;
+  font-size: 25px;
+}
+.header-bell span {
+  font-weight: 500;
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0 4px;
+  position: absolute;
+  right: -3px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-left: 2px solid #f2f4f8;
+  padding-left: 20px;
+}
+.profile img {
+  width: 40px;
+  height: 40px;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.cps-container {
+  padding: 30px;
+  padding-left: 0;
+}
+
+.cps-container ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.cps-container i {
+  margin-right: 10px;
+}
+
+.cps-container ul > li:last-child {
+  color: #cacdd7;
+}
+
+.tour {
+  margin-top: 30px;
+}
+
+.tour-info {
+  display: flex;
+  width: 70%;
+  background-color: #f4f4f6;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.card-logo-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-logo {
+  background-color: #ffffff;
+  border: 2px solid #f4f4f6;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card-logo img {
+  height: 20px;
+}
+
+.card-logo-picked {
+  background-color: #e4e7eb;
+  border: 1px solid #b1c5f6;
+}
+
+.credit-card-image {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.card-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.fa-microchip {
+  font-size: 30px;
+}
+
+.card-image {
+  background-color: #ced9fd;
+  padding: 20px;
+  flex: 1;
+  border-radius: 20px;
+}
+.card-image img {
+  height: 20px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.card-image:last-child {
+  background-color: #bddba6;
+}
+
+.card-number-info {
+  margin: 20px 0;
+  background-color: #f4f5f6;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.card-number-border {
+  border: 1px solid #8d92fe;
+}
+
+.card-number-info i {
+  color: #8d92fe;
+}
+
+.date-cvc {
+  display: flex;
+  gap: 20px;
+}
+.date-cvc div {
+  flex: 1;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.form-card {
+  margin-top: 30px;
+  width: 70%;
+}
+
+.form-card button {
+  background-color: #3b71fe;
+  color: white;
+  font-weight: 600;
+  padding: 15px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.fa-star {
+  color: #ffc542;
+  margin-right: 10px;
+}
+
+.main-box {
+  display: flex;
+  gap: 30px;
+}
+
+.main-box1 {
+  flex: 2;
+}
+.main-box2 {
+  flex: 1;
+  border: 3px solid #f4f4f6;
+  padding: 20px;
+  border-radius: 20px;
+  height: fit-content;
+}
+.main-box2 img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.check-in-out {
+  display: flex;
+  margin: 20px 0;
+}
+
+.place-stay img {
+  display: block;
+}
+
+.star {
+  margin: 20px 0;
+}
+
+div.main-box2 > p:nth-child(1) {
+  margin: 20px 0;
+}
+.check-in-out div {
+  flex: 1;
+}
+
+.booked-details > div div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.booked-details > div div:last-child {
+  background-color: #f4f5f6;
+  border-radius: 5px;
+}
+.booked-details > p {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.booked-details h2 {
+  margin: 20px 0;
+}
+
+footer {
+  background-color: #f4f5f6;
+  margin-top: 200px;
+  position: relative;
+  height: fit-content;
+}
+
+.box-email {
+  min-height: 200px;
+  position: absolute;
+  top: -100px;
+  background-color: #316bff;
+  width: 80%;
+  display: flex;
+  align-items: flex-end;
+  padding: 50px;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+.box-email > div:first-child,
+.box-email p {
+  color: white;
+}
+
+.box-email > div:last-child {
+    background-color: white;
+    height: 60px;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.box-email >div:last-child input {
+    border: none;
+
+}
+
+.box-email >div:last-child button {
+    display: block;
+    background-color: #353945;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+}
+
+
+.link-box {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+
+.link-box > div:first-child {
+    width: 250px;
+}
+
+.link-box >div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dark-mode {
+    background-color: #fff;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-checked i{
+  position: absolute;
+  color: #fff;
+  font-size: 10px;
+  background-color: #316bff;
+  border-radius: 50%;
+  padding: 3px;
+  top: -6px;
+  right: -6px;
+}
+
+.logo-checked {
+  position: relative;
+}
+.main-box1>.main-box2 {
+  display: none;
+}
+@media only screen and (max-width: 739px) {
+  header img {
+    height: 20px;
+  }
+
+  header > span {
+    font-size: 20px;
+  }
+  header p {
+    display: none;
+  }
+  header > div {
+    gap: 10px;
+  }
+
+  .profile i {
+    display: none;
+  }
+
+  header {
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  /* header div img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+   */
+  .cps-container {
+    display: none;
+  }
+  .tour-info {
+    width: 100%;
+  }
+  .main-box {
+    flex-direction: column;
+  }
+  main {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .main-box2 {
+    display: none;
+  }
+  .main-box1>.main-box2{
+    display: block;
+  }
+  .card-logo-list {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .card-logo {
+    width: fit-content;
+    padding: 5px;
+  }
+  .credit-card-image {
+    flex-direction: column;
+  }
+  .form-card {
+    width: 100%;
+  }
+
+  .form-card button {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .box-email {
+    flex-direction: column;
+    width: 100%;
+    align-items:normal;
+    padding: 20px;
+    left: 0;
+  }
+
+  .footer-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .box-email > div:last-child {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .box-email >div:first-child p {
+    margin: 20px 0;
+  }
+
+  .link-box {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .link-box > div:first-child p{
+    display: none;
+  }
+  .link-box img {
+    width: 100px;
+  }
+  .link-box >div:first-child {
+    order: 4;
+  }
+  .profile {
+    padding-left: 10px;
+  }
+}
