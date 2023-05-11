@@ -1,14 +1,14 @@
 
-let n =+prompt("input");
-let result ='';
-if(!isNaN(n)&&n>0&&Number.isInteger(n)){
-    for(let i=1;i<=n;i++){
-        for (let j=1; j<=i;j++){
-            result+=`${j} `;
+let n = +prompt("input");
+let result = '';
+if (n > 0 && Number.isInteger(n)) {
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= i; j++) {
+            result += `${j} `;
         }
-        result+='\n';
+        result += '\n';
     }
     alert(result);
-}else{
+} else {
     alert("Invalid");
 }

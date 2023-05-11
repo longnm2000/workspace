@@ -6,7 +6,7 @@ chương của số đó từ 1 — 10
 
 let n = +prompt("input");
 let result = '';
-if (!isNaN(n) && n >= 0) {
+if (Number.isInteger(n) && n >= 0) {
     for (let i = 1; i <= 10; i++) {
         result += `${n} * ${i} = ${n * i} \n`;
     }

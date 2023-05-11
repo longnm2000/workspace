@@ -8,18 +8,19 @@ let n = +prompt("input");
 let a = 0;
 let b = 1;
 let c = 0;
-let count = n;
 let result = "";
-if (!isNaN(n) &&n>0 && Number.isInteger(n)){
-    while (count > 0) {
+let count =0;
+if (n>0 && Number.isInteger(n)){
+    while (n > 0) {
         result += `${a} `;
         c = b;
         b = a + b;
         a = c;
-        count--;
+        n--;
         console.log(result);
+        count++;
     }
-    
+    console.log(count);
     alert(result);
 }else{
     alert("invalid");

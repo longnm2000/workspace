@@ -6,7 +6,7 @@ biểu thức C = 1 + ½ + ⅓ + … + 1/n
 
 let n = +prompt("Input n");
 let result = 0;
-if (!isNaN(n) && n > 0 && Number.isInteger(n)) {
+if (n > 0 && Number.isInteger(n)) {
     for (let i = 1; i <= n; i++) {
         result += 1 / i;
     }

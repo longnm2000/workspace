@@ -6,7 +6,7 @@ của biểu thức B = 1 x 2 x 3 x … x n
 
 let n = +prompt("Input n");
 let result = 1;
-if (!isNaN(n) && n > 0 && Number.isInteger(n)) {
+if (n > 0 && Number.isInteger(n)) {
     for (i = 1; i <= n; i++) {
         result *= i;
     }

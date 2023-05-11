@@ -6,8 +6,8 @@
  */
 
 
-for(let i=1; i<17;i++ ){
-    if(3*i+10*(17-i)==100){
-        console.log("yeu: ",i*3,"ghet: ",100-3*i);
+for (let i = 1; i < 17; i++) {
+    if (3 * i + 10 * (17 - i) == 100) {
+        console.log("yeu: ", i * 3, "ghet: ", 100 - 3 * i);
     }
 }

@@ -6,7 +6,7 @@ biểu thức A = 1 x ½ + ½ x ⅓ + ⅓ x ¼ + … + 1/(n-1) x 1/n
 
 let n = +prompt("input n");
 let result = 0;
-if (!isNaN(n) && n >= 2 && Number.isInteger(n)) {
+if (n >= 2 && Number.isInteger(n)) {
     for (let i = 2; i <= n; i++) {
         result += 1 / (n - 1) * 1 / n;
     }

@@ -7,7 +7,7 @@ màn hình console các số chẵn trước, sau đó in ra các số lẻ sau
 let n = +prompt("input");
 let chan = "";
 let le = '';
-if (!isNaN(n) && n > 0 && Number.isInteger(n)) {
+if (n > 0 && Number.isInteger(n)) {
     for (let i = 0; i <= n; i++) {
         i % 2 == 0 ? chan += `${i} \n` : le += `${i} \n`;
     }

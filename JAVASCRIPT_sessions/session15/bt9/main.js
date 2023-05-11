@@ -6,7 +6,7 @@ kiểm tra xem số đó có phải là số nguyên tố hay không và in ra m
 
 let n = +prompt("Input");
 let result = true;
-if (!isNaN(n) && n > 0 && Number.isInteger(n)) {
+if (n > 0 && Number.isInteger(n)) {
     if (n == 1) {
         alert(`1 không là số nguyên tố`);
     } else if (n == 2) {

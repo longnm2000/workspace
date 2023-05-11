@@ -6,7 +6,7 @@ màn hình console các số từ 0 — n theo dạng chẵn lẻ.
 
 let n = +prompt("input");
 let result = '';
-if (!isNaN(n) && n > 0 &&Number.isInteger(n)) {
+if (n > 0 &&Number.isInteger(n)) {
     for (let i = 0; i <= n; i++) {
         i%2==0? result += `${i} - chẵn \n` : result += `${i} - lẻ \n`;
     }
