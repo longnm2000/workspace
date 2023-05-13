@@ -10,18 +10,16 @@ do {
   alert(products);
   let productBuy = prompt("Nhập tên sản phẩm muốn mua");
   if (bakery.includes(productBuy)) {
-    let count = 0;
-    let isInCart = false;
+    let count = -1;
     let quantity = prompt("Nhập số lượng muốn mua");
     for (let i = 0; i < cart.length; i++) {
       if (cart[i][0] == productBuy) {
-        isInCart = true;
         count = i;
         console.log(count);
         break;
       }
     }
-    if (isInCart == false) {
+    if (count == -1) {
       cart.push([productBuy, +quantity]);
     } else {
       cart[count][1] += +quantity;
@@ -31,5 +29,14 @@ do {
     alert("We don't have that item");
   }
   console.log(cart);
-  isContinue = prompt("Bạn có tiếp tục mua không");
+  isContinue = prompt("Bạn có tiếp tục mua không? Yes/No?");
+  let cartProducts = "";
+
+  for (let i = 0; i < cart.length; i++) {
+    cartProducts += `${i + 1}. ${cart[i][0]} - ${cart[i][1]}\n`;
+  }
+
+  if (isContinue != "yes") {
+    alert(cartProducts);
+  }
 } while (isContinue == "yes");
