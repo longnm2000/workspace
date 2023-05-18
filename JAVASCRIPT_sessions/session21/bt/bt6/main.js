@@ -23,14 +23,10 @@ let tasks = [
 
 function printObj(arr) {
   let result = "";
-  let check = "";
   for (let i = 0; i < arr.length; i++) {
-    if (tasks[i].isComplete == false) {
-      check = " ";
-    } else {
-      check = "X";
-    }
-    result += `${i + 1}. [${check}] Task: ${arr[i].name}\n\n`;
+    result += `${i + 1}. [${tasks[i].isComplete == false ? "" : "X"}] Task: ${
+      arr[i].name
+    }\n\n`;
   }
   alert(result);
 }
