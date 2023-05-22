@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = +prompt("Nhập số");
+      let sum = +prompt("Nhập tổng");
+      function hasTwoDigitsWithSum(n, sum) {
+        if (9 < n && n < 1000000 && 0 < sum && sum < 19) {
+          let numberArray = n.toString().split("");
+          console.log(numberArray);
+          let result = 0;
+          for (let i = 0; i < numberArray.length; i++) {
+            result += parseInt(numberArray[i]);
+          }
+          console.log(result);
+          if (result === sum) {
+            return true;
+          }
+        }
+        return false;
+      }
+      console.log(hasTwoDigitsWithSum(n, sum));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = prompt("Nhập chuỗi").toLowerCase().split(" ");
+      function statisticsWords(str) {
+        let obj = {};
+        let checkedList = [];
+        for (let i = 0; i < str.length; i++) {
+          if (!checkedList.includes(str[i])) {
+            checkedList.push(str[i]);
+            let count = 0;
+            for (let j = i; j < str.length; j++) {
+              if (str[i] === str[j]) {
+                count++;
+              }
+            }
+            obj[str[i]] = count;
+          }
+        }
+        console.log(str);
+        return obj;
+      }
+      console.log(statisticsWords(str));
+    </script>
+  </body>
+</html>
