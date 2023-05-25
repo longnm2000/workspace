@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dark-mode {
+    background-color: #111;
+    color: #fff;
+}
+
+h2,
+p {
+    margin-bottom: 15px;
+
+}
+
+.main {
+    width: fit-content;
+    margin: 50px auto 0;
+    padding: 20px;
+}
