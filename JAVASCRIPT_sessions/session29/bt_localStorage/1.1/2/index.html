@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="add-session">
+      <span id="add-btn">ADD BOOKMARK</span>
+    </section>
+    <section class="main"></section>
+    <div class="modal-add">
+      <div class="modal-title">
+        Add Bookmark<i class="bi bi-x-lg close-btn"></i>
+      </div>
+      <form id="main-form">
+        <div class="input-group">
+          <label for="web-name">Website Name</label>
+          <input
+            id="web-name"
+            type="text"
+            placeholder="Please input website name"
+            name="web"
+          />
+        </div>
+        <div class="input-group">
+          <label for="web-url">Website Url</label>
+          <input
+            id="web-url"
+            type="text"
+            placeholder="Please input website url"
+            name="url"
+          />
+        </div>
+        <button>Save</button>
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
