@@ -9,9 +9,12 @@ export default class ParentComp extends Component {
    * ParentComp => ChildrenComp
    */
   render() {
+    const title = "Rikkei Academy";
     return (
       <div>
-        <ChildrenComp />
+        <ChildrenComp titleParent={title} course={"ReactJS"}>
+          Time:15 buổi
+        </ChildrenComp>
       </div>
     );
   }
