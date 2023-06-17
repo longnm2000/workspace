@@ -10,10 +10,10 @@ import PhoneShop from "./components/MD02-S01-BT-Bai06/PhoneShop";
 function App() {
   return (
     <div className="App">
-      {/* <ParentComponent /> */}
+      <ParentComponent />
       {/* <ListComponent /> */}
       {/* <SumComponent /> */}
-      <CurrentTimeComponent />
+      {/* <CurrentTimeComponent /> */}
       {/* <CartParent /> */}
       {/* <FormComponent /> */}
       {/* <ManagerUser /> */}

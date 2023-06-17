@@ -10,6 +10,7 @@ import SumTotal from "./components/MD02-S02-TH-Bai 6/SumTotal";
 import DisplayComp from "./components/MD02-S02-TH-Bai 7/DisplayComp";
 import ToggleContent from "./components/MD02-S02-BT-Bai 2/ToggleContent";
 import ShowInputValue from "./components/MD02-S02-BT-Bai 3/ShowInputValue";
+import Clock from "./components/MD02-S02-BT-Bai 1/Clock";
 
 function App() {
   return (
@@ -21,10 +22,11 @@ function App() {
       {/* <Sum1Comp /> */}
       {/* <CountClickComp /> */}
       {/* <ValueInputComp /> */}
-      <SumTotal />
+      {/* <SumTotal /> */}
       {/* <DisplayComp /> */}
       {/* <ToggleContent /> */}
       {/* <ShowInputValue /> */}
+      <Clock />
     </div>
   );
 }

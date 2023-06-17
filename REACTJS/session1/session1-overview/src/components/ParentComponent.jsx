@@ -10,6 +10,25 @@ import SliderSection from "./SliderSection";
 import ProductItem from "./ProductItem";
 
 export default class ParentComponent extends Component {
+  constructor() {
+    super();
+    this.state = {
+      data: [
+        { src: "images/p1.png", price: "$120.00" },
+        { src: "images/p2.png", price: "$110.00" },
+        { src: "images/p3.png", price: "$150.00" },
+        { src: "images/p4.png", price: "$150.00" },
+        { src: "images/p5.png", price: "$150.00" },
+        { src: "images/p6.png", price: "$150.00" },
+        { src: "images/p7.png", price: "$150.00" },
+        { src: "images/p8.png", price: "$150.00" },
+        { src: "images/p9.png", price: "$150.00" },
+        { src: "images/p10.png", price: "$150.00" },
+        { src: "images/p11.png", price: "$150.00" },
+        { src: "images/p12.png", price: "$150.00" },
+      ],
+    };
+  }
   render() {
     return (
       <div>
@@ -32,18 +51,11 @@ export default class ParentComponent extends Component {
           </div>
           <div className="container layout_padding">
             <div className="product_container">
-              <ProductItem />
-              <ProductItem />
-              <ProductItem />
-              <ProductItem />
-              <ProductItem />
-              <ProductItem />
-              <ProductItem />
-              <ProductItem />
-              <ProductItem />
-              <ProductItem />
-              <ProductItem />
-              <ProductItem />
+              {this.state.data.map((item, index) => {
+                return (
+                  <ProductItem key={index} src={item.src} price={item.price} />
+                );
+              })}
             </div>
           </div>
         </section>
