@@ -1,6 +1,7 @@
 import "./App.css";
 import DemoUseEffect from "./components/DemoUseEffect";
 import DemouseState from "./components/DemouseState";
+import IndexColor from "./components/LiftingStateUp/IndexColor";
 import Count from "./components/MD02-S04-BT-Bai 1/Count";
 import CountText from "./components/MD02-S04-BT-Bai 2/CountText";
 import CountTime from "./components/MD02-S04-BT-Bai 4/CountTime";
@@ -12,6 +13,7 @@ import SearchAndFilter from "./components/MD02-S04-TH-Bai 5/SearchAndFilter";
 import Form from "./components/MD02-S04-TH-Bai 6/Form";
 import TemperatureConverter from "./components/MD02-S04-TH-Bai 7/TemperatureConverter";
 import ShippingCalculator from "./components/MD02-S04-TH-Bai 8/ShippingCalculator";
+import Todo from "./components/Todo/Todo";
 import TodoList from "./components/TodoList";
 
 function App() {
@@ -30,7 +32,9 @@ function App() {
       {/* <Count /> */}
       {/* <CountText /> */}
       {/* <CountTime /> */}
-      <TodoList />
+      {/* <TodoList /> */}
+      {/* <Todo /> */}
+      <IndexColor />
     </div>
   );
 }
