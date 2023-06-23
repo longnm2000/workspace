@@ -1,5 +1,8 @@
 import "./App.css";
+import ParentContext from "./components/DemoUseContext/ParentContext";
 import DemoUseEffect from "./components/DemoUseEffect";
+import DemoUseReducer from "./components/DemoUseReducer";
+import DemoUseRef from "./components/DemoUseRef";
 import DemouseState from "./components/DemouseState";
 import IndexColor from "./components/LiftingStateUp/IndexColor";
 import Count from "./components/MD02-S04-BT-Bai 1/Count";
@@ -34,7 +37,10 @@ function App() {
       {/* <CountTime /> */}
       {/* <TodoList /> */}
       {/* <Todo /> */}
-      <IndexColor />
+      {/* <IndexColor /> */}
+      {/* <ParentContext /> */}
+      {/* <DemoUseReducer /> */}
+      <DemoUseRef />
     </div>
   );
 }
