@@ -96,6 +96,8 @@ header h2 {
 .update-inp {
     border: none;
     padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
 
 }
 
@@ -131,4 +133,30 @@ header h2 {
 .mode-btn:hover {
     cursor: pointer;
     background-color: rgb(247, 57, 57);
+}
+
+.update-btn {
+    padding: 9px 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.update-btn:hover {
+    cursor: pointer;
+    background-color: rgb(129, 126, 126);
+}
+
+@media (max-width:500px) {
+    .input-box {
+        width: 100%;
+    }
+
+    .list-box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .todo-box {
+        width: 100%;
+    }
 }

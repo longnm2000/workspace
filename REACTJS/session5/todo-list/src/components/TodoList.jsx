@@ -25,7 +25,9 @@ export default function TodoList({
                 onChange={(e) => setEditText(e.target.value)}
               />
 
-              <button onClick={handleUpdate}>Update</button>
+              <button className="update-btn" onClick={handleUpdate}>
+                Update
+              </button>
             </div>
           ) : (
             <div>
