@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Long",
+      "phone": "0123456789",
+      "email": "longnguyenmanh20052000@gmail.com",
+      "address": "Thái Bình",
+      "age": 18
+    },
+    {
+      "id": 2,
+      "name": "Hoa",
+      "phone": "0987654321",
+      "email": "hoanguyen@gmail.com",
+      "address": "Hà Nội",
+      "age": 24
+    },
+    {
+      "id": 3,
+      "name": "Yến",
+      "phone": "0912345677",
+      "email": "yen@gmail.com",
+      "address": "Hồ Chí Minh",
+      "age": "18"
+    },
+    {
+      "id": 4,
+      "name": "Nam",
+      "phone": "0888777666",
+      "email": "namnguyen@gmail.com",
+      "address": "Đà Nẵng",
+      "age": 28
+    },
+    {
+      "id": 5,
+      "name": "Linh",
+      "phone": "0976543210",
+      "email": "linhle@gmail.com",
+      "address": "Hải Phòng",
+      "age": 36
+    },
+    {
+      "id": 6,
+      "name": "Mai",
+      "phone": "0911223344",
+      "email": "mainguyen@gmail.com",
+      "address": "Bình Dương",
+      "age": 32
+    }
+  ]
+}
