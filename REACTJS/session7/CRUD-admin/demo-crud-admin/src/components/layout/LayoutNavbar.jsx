@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Button from "react-bootstrap/esm/Button";
 
 export default function LayoutNavbar() {
+  //   {
+  //   search,
+  //   handleChange,
+  //   handleSubmitSearch,
+  // }
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -41,17 +47,6 @@ export default function LayoutNavbar() {
           <Link to={"/user/add"} style={{ marginRight: "50px" }}>
             <Button variant="outline-primary">Add User</Button>
           </Link>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
