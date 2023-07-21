@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Lan",
+      "email": "lan@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Hoa",
+      "email": "hoa@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Ngọc",
+      "email": "ngoc@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Hanato",
+      "email": "yuihanato@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "Yua Mikami",
+      "email": "yua@gmail.com"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+// let peopleList = ["vu","hai anh","toan","hong anh"];

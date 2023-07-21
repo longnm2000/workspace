@@ -1,0 +1,26 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bt{
+    color: #6a7175;
+
+}
+
+.main{
+    width: 400px;
+    margin: auto;
+    border: 1px solid #caccce;
+    border-radius: 5px;
+}
+.flexDiv{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #caccce;
+}
+.main>div{
+    padding: 15px;
+}
+
+.fa-square{
+    color: blue;
+}

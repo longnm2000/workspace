@@ -1,0 +1,16 @@
+{
+  "users": [
+    { "name": "john", "address": "hanoi", "phone": "0999999999" },
+    { "name": "alice", "address": "new york", "phone": "0888888888" },
+    { "name": "bob", "address": "london", "phone": "0777777777" },
+    { "name": "mary", "address": "paris", "phone": "0666666666" },
+    { "name": "peter", "address": "tokyo", "phone": "0555555555" },
+    { "name": "susan", "address": "los angeles", "phone": "0444444444" },
+    { "name": "david", "address": "berlin", "phone": "0333333333" },
+    { "name": "linda", "address": "sydney", "phone": "0222222222" },
+    { "name": "michael", "address": "toronto", "phone": "0111111111" },
+    { "name": "jennifer", "address": "mumbai", "phone": "0000000000" },
+    { "email": "ong@gmail.com", "name": "long", "address": "hanoi" },
+    { "email": "lol@gmail.com", "name": "depgiai", "address": "new york" }
+  ]
+}

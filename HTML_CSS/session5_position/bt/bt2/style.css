@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-color: black;
+}
+.container {
+    width: 500px;
+    height: 500px;
+    background-image: linear-gradient(0,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url(../../assets/images/Hinh-anh-con-gai-cute-de-thuong2B2528872529.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius:8px;
+    position: relative;
+    padding: 30px;
+}
+.automotive {
+    color: white;
+    background-color: #e12121;
+    width: fit-content;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: smaller;
+    z-index: 4;
+    position: absolute;
+}
+.box1, .box2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 20% /15%;
+    background: linear-gradient(45deg, rgba(0,0,0,0) 0%, rgba(201,22,17,0.3) 100%);
+}
+.box1 {
+    top: 20px;
+    left: 75px;
+    z-index: 2;
+    
+}
+
+.box2 {
+    top: 80px;
+    right: 30px;
+    z-index: 3;
+}
+
+.icons {
+    position: absolute;
+    z-index: 4;
+    font-size: 50px;
+    color: #aaadac;
+    top: 100px;
+    right: 17px;
+}
+
+i {
+    background-color: #c20821;
+    padding: 10px;
+    color: white;
+}
+.text {
+    border: 2px solid #aaadac;
+    text-align: center;
+    border-radius: 10px;
+}
+.icons>div,i{
+    border-radius: 15px;
+}
+
+.line {
+    height: 30px;
+    width: 3px;
+    background-color: #aaadac;
+    margin: 0 auto;
+}
+.title{
+    position: absolute;
+    bottom: 30px;
+    z-index: 2;
+}
+h1 {
+    color: white;
+}
+
+.title p {
+    color: #aaadac;
+}

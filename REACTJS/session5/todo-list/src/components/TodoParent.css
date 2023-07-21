@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffcc08;
+    height: 70px;
+    color: white;
+}
+
+header h2 {
+    line-height: 70px;
+    padding-left: 20px;
+}
+
+.input-box {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    height: 100px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.input-box input {
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.input-box button {
+    position: absolute;
+    right: 10px;
+    bottom: -13px;
+    background-color: #ffcc08;
+    border-radius: 50%;
+    padding: 6px 9px;
+    border: none;
+}
+
+.input-box button:hover {
+    background-color: #fcdf6d;
+    cursor: pointer;
+}
+
+.list-box {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px
+}
+
+.todo-box {
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 200px;
+    position: relative;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.delete-btn {
+    color: #ffcc08;
+    position: absolute;
+    padding: 5px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.delete-btn:hover {
+    cursor: pointer;
+}
+
+.edit-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px;
+
+}
+
+.edit-btn:hover {
+    cursor: pointer;
+}
+
+.update-inp {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+
+}
+
+.todo-info {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.light {
+    color: black;
+    background-color: white;
+}
+
+.dark {
+    color: white;
+    background-color: black;
+}
+
+.mode-btn {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    color: #ffcc08
+}
+
+.mode-btn:hover {
+    cursor: pointer;
+    background-color: rgb(247, 57, 57);
+}
+
+.update-btn {
+    padding: 9px 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.update-btn:hover {
+    cursor: pointer;
+    background-color: rgb(129, 126, 126);
+}
+
+@media (max-width:500px) {
+    .input-box {
+        width: 100%;
+    }
+
+    .list-box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .todo-box {
+        width: 100%;
+    }
+}

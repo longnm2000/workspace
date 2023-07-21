@@ -1,0 +1,2 @@
+-event loop nodejs là gì
+-single thread, multi thread

@@ -1,0 +1,19 @@
+h3{
+    color: yellow;
+}
+.p1{
+    color: blue;
+}
+.p2{
+    color: palevioletred;
+}
+.p3{
+    background-color: #ffffcd;
+    padding: 20px;
+}
+p,h3 {
+    margin-left: 20px;
+}
+.p3{
+    margin-left: 0;
+}

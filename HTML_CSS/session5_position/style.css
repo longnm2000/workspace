@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body {
+    background-color: black;
+} */
+
+/* .card-img{
+    background-image: url(./assets/images/anh-8-1621645023-458-width650height813.jpg);
+    width: 300px;
+    height: 378px;
+    background-size: cover;
+    position: relative;
+    margin:50px auto;
+}
+p{
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    color: red;
+}
+
+.container{
+    height: 2000px;
+    background-color: black;
+    position: relative;
+}
+.header{
+    height: 60px;
+    background-color: pink;
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
+/* .parent {
+    width: 300px;
+    height: 400px;
+    background-color: pink;
+    position: relative;
+}
+
+.parent div {
+    width: 100px;
+    height: 100px;
+}
+.child1 {
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.child2 {
+    background-color: green;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.child3 {
+    background-color: blue;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+} */
+
+.child1, .child2, .child3, .child4 {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.child1 {
+    background-color: red;
+}
+
+.child2 {
+    background-color: green;
+}
+
+.child3 {
+    background-color: blue;
+}
+
+.child4 {
+    background-color: yellow;
+}
+.flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    height: 600px;
+    background-color: black;
+    align-items: center;
+}

@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    position: relative;
+    margin: 20px 0;
+}
+
+.modal {
+    background-color: white;
+    height: 70px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 250px);
+}
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.hide {
+    display: none;
+}
