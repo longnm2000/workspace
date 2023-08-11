@@ -30,9 +30,18 @@ module.exports.findOne = async (req, res) => {
 };
 
 module.exports.create = async (req, res) => {
+  let { name, birthday, sex, place, address, email, password } = req.body;
+  console.log(name, birthday, sex, place, address, email, password);
   try {
-    let { email, password } = req.body;
-    await userService.create(email, password);
+    await userService.create(
+      name,
+      birthday,
+      sex,
+      place,
+      address,
+      email,
+      password
+    );
     res.json({ message: "Create User Successfully" });
   } catch (error) {
     res.json({ error });

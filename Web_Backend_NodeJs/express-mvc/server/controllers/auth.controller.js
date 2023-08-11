@@ -1,9 +1,17 @@
 const authService = require("../services/auth.service");
 module.exports.signup = async (req, res) => {
-  let { email, password } = req.body;
+  let { name, birthday, sex, place, address, email, password } = req.body;
   try {
-    await authService.signup(email, password);
-    res.json({
+    await authService.signup(
+      name,
+      birthday,
+      sex,
+      place,
+      address,
+      email,
+      password
+    );
+    res.status(201).json({
       message: " Sign up successfully",
     });
   } catch (error) {
@@ -17,7 +25,7 @@ module.exports.login = async (req, res) => {
   let { email, password } = req.body;
   try {
     let result = await authService.login(email, password);
-    res.json(result);
+    res.status(200).json(result);
   } catch (error) {
     res.json({ error });
   }

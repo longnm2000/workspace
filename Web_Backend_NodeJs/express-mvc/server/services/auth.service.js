@@ -2,7 +2,15 @@ const db = require("../utils/database");
 const bcrypt = require("bcrypt");
 const userService = require("./users.service");
 const jwt = require("jsonwebtoken");
-module.exports.signup = (email, password) => {
+module.exports.signup = (
+  name,
+  birthday,
+  sex,
+  place,
+  address,
+  email,
+  password
+) => {
   console.log(email, password);
   // mã hóa mật khẩu
   // chuẩn hóa md5(ngày xưa)
@@ -10,7 +18,15 @@ module.exports.signup = (email, password) => {
   let salt = bcrypt.genSaltSync(10);
   let hashPassword = bcrypt.hashSync(password, salt);
 
-  return userService.create(email, hashPassword);
+  return userService.create(
+    name,
+    birthday,
+    sex,
+    place,
+    address,
+    email,
+    hashPassword
+  );
 };
 
 module.exports.login = async (email, password) => {
@@ -27,8 +43,8 @@ module.exports.login = async (email, password) => {
       } else {
         let access_token = jwt.sign(
           { data: { id: rows[0].id, email: rows[0].email } },
-          "long-nguyen",
-          { expiresIn: 60 }
+          process.env.TOKEN_SECRET,
+          { expiresIn: 120 }
         );
         return {
           message: "Sign in success",

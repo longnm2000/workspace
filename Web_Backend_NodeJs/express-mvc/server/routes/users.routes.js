@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const { isAuth } = require("../middlewares/auth.middleware");
 
 //require controllers
 const {
@@ -10,14 +11,14 @@ const {
   remove,
 } = require("../controllers/users.controller");
 
-router.get("/", findAll);
+router.get("/", isAuth, findAll);
 
 router.get("/:id", findOne);
 
 router.post("/", create);
 
-router.patch("/:id", update);
+router.patch("/:id", isAuth, update);
 
-router.delete("/:id", remove);
+router.delete("/:id", isAuth, remove);
 
 module.exports = router;

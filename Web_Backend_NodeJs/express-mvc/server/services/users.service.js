@@ -10,9 +10,17 @@ module.exports.findOneBy = (email) => {
   return db.execute("SELECT * FROM architect WHERE email = ?", [email]);
 };
 
-module.exports.create = (email, password) => {
-  return db.execute("INSERT INTO architect(email,password) VALUES(?,?)", [
-    email,
-    password,
-  ]);
+module.exports.create = (
+  name,
+  birthday,
+  sex,
+  place,
+  address,
+  email,
+  password
+) => {
+  return db.execute(
+    "INSERT INTO architect(name,birthday,sex,place,address,email,password) VALUES(?,?,?,?,?,?,?)",
+    [name, birthday, sex, place, address, email, password]
+  );
 };

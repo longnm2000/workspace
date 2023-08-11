@@ -4,6 +4,9 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const cors = require("cors");
 const port = 8000;
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const userRoutes = require("./routes/users.routes");
 const authRoutes = require("./routes/auth.routes");
